@@ -439,6 +439,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "websites-multiscale-deformable-objects-manipulation-via-wavelet-decomposed-boundary-element-method",
+          title: 'Multiscale Deformable Objects Manipulation via Wavelet-Decomposed Boundary Element Method',
+          description: "",
+          section: "Websites",handler: () => {
+              window.location.href = "/websites/dwtbem/";
             },},{id: "websites-autonomous-robotic-exploration-on-unknown-soft-object",
           title: 'Autonomous Robotic Exploration on Unknown Soft Object',
           description: "",
