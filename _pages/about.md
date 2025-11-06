@@ -29,6 +29,9 @@ announcements:
 I am a fourth-year PhD student in autonomous surgical robotics at [Stormlab](https://www.stormlabuk.com/), University of Leeds, advised by [Prof. Pietro Valdastri](https://eps.leeds.ac.uk/electronic-engineering/staff/863/professor-pietro-valdastri). 
 I received my M.S. and B.E. degrees from the School of Mechanical Engineering, Shanghai Jiao Tong University.
 
+My current Ph.D. work is centered on the [da Vinci Research Kit (dVRK)](https://www.intuitive-foundation.org/dvrk/) for laparoscopic surgery, under the theme *“From Conformation to Exploration: Advancing Autonomous Robotic Manipulation of Soft Organs in Laparoscopy”*. The project aims to achieve more complete autonomous surgical capabilities, enabling robots to actively manipulate and explore soft organs to improve surgical outcomes.
+
+
 My research focuses on advancing minimally invasive surgery through innovations in robotics and AI, specializing in three core technical domains:
 1. **Perception**: Developing real-time sensing systems for dynamic surgical environments, including deformable soft tissue manipulation and laparoscopic image processing.
 2. **Analysis**: Creating interpretable AI models for surgical decision-making through multimodal medical data characterization and uncertainty-aware learning.
