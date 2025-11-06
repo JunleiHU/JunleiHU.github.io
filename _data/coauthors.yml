@@ -1,34 +1,19 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"valdastri":
+  - firstname: ["Pietro"]
+    url: https://eps.leeds.ac.uk/electronic-engineering/staff/863/professor-pietro-valdastri
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"chen":
+  - firstname: ["Xiaojun"]
+    url: https://me.sjtu.edu.cn/teacher_directory1/chenxiaojun.html
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"huang":
+  - firstname: ["Shoudong"]
+    url: https://profiles.uts.edu.au/Shoudong.Huang
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"jones":
+  - firstname: ["Dominic"]
+    url: https://eps.leeds.ac.uk/faculty-engineering-physical-sciences/staff/6971/dr-dominic-jones
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
-
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"dogar":
+  - firstname: ["Mehmet", "Mehmet R.", "Mehmet R"]
+    url: https://eps.leeds.ac.uk/computing/staff/743/professor-mehmet-dogar
