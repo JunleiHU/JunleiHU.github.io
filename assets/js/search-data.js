@@ -447,6 +447,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "websites-autonomous-robotic-exploration-on-unknown-soft-object",
+          title: 'Autonomous Robotic Exploration on Unknown Soft Object',
+          description: "",
+          section: "Websites",handler: () => {
+              window.location.href = "/websites/exploration/";
             },},{id: "websites-occlusion-robust-autonomous-robotic-manipulation-of-human-soft-tissues-with-3-d-surface-feedback",
           title: 'Occlusion-Robust Autonomous Robotic Manipulation of Human Soft Tissues With 3-D Surface Feedback',
           description: "",
