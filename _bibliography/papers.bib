@@ -19,6 +19,7 @@
   note={Submitted to IEEE Transactions on Robotics (T-RO)},
   year={2025},
   abbr={IEEE T-RO},
+  website={/websites/dwtbem/},
   abstract={Robotic deformable object manipulation faces critical challenges in surgical applications due to under-actuation, unpredictable tissue deformation, and limited intraoperative visibility. Traditional model-free methods often encounter unstable Jacobians caused by ill-conditioned observations, while physics-based models require precise tissue parameters and volumetric meshes, limiting their practicality in real surgeries. We propose a wavelet-Boundary Element Method (BEM) framework that encodes deformations from partial 3D shape feedback using multiscale wavelet descriptors. Coupling wavelets with BEM allows computation of the nonlinear motion-deformation mapping via boundary integrals, eliminating the need for volumetric meshes and enabling real-time control under occluded views. We validate our approach in simulation and on the da Vinci Research Kit (dVRK) using phantom organs and ex vivo animal tissue, achieving millimetre-level accuracy with contour, curve, and surface feedback. Comparative studies with Fourier-based and model-free methods show superior stability in dexterous tissue manipulation, addressing ill-conditioning through spatial-frequency localization. This framework enhances robotic manipulation in unstructured surgical environments, providing robust control and accurate tissue interaction despite partial observability. Our results demonstrate its potential to improve precision and safety in minimally invasive procedures.},
 }
 
@@ -30,7 +31,8 @@
     year = {2025},
     abbr = {IEEE T-MRB},
     bibtex_show={true},
-    html={https://ieeexplore.ieee.org/document/11145193/}
+    html={https://ieeexplore.ieee.org/document/11145193/},
+    abstract={Robotic-assisted mandible reconstruction surgery is reported to achieve a more precise fibula osteotomy. However, intraoperative registration of the fibula with preoperative imaging is the key to achieving precision. Although methods such as probe scanning, optical navigation, and point cloud recognition are available, the reliability and efficiency of registration are low due to the sparse anatomical features and bone membrane covering on the fibular surface. Fibular shaping involves multiple bone segment osteotomies, and therefore, the design of fibular holder is necessary to achieve stable shaping. Based on these facts, an instantaneous and markerless registration based on the fibular holder is proposed, consisting of the initial alignment and refinement. The initial alignment using the point cloud or the holder to locate the fibula. The refinement, based on mechanical constraints, is developed and solved iteratively, utilizing the mechanical constraints between the fibula and the V-shaped mounts of the fibular holder. The accuracy of the approach is evaluated through simulations, model experiments and animal experiments. The results indicated that this algorithm provides higher accuracy and efficiency. This method can achieve non-invasive, efficient, and highly precise fibular registration in mandibular reconstruction surgery.}
 }
 
 
@@ -42,6 +44,8 @@
   abbr={arXiv},
   note={Under Review},
   bibtex_show={true},
+  html={https://arxiv.org/abs/2508.09681},
+  abstract={     We proposed a novel test-time optimisation (TTO) approach framed by a NeRF-based architecture for long-term 3D point tracking. Most current methods in point tracking struggle to obtain consistent motion or are limited to 2D motion. TTO approaches frame the solution for long-term tracking as optimising a function that aggregates correspondences from other specialised state-of-the-art methods. Unlike the state-of-the-art on TTO, we propose parametrising such a function with our new invertible Neural Radiance Field (InvNeRF) architecture to perform both 2D and 3D tracking in surgical scenarios. Our approach allows us to exploit the advantages of a rendering-based approach by supervising the reprojection of pixel correspondences. It adapts strategies from recent rendering-based methods to obtain a bidirectional deformable-canonical mapping, to efficiently handle a defined workspace, and to guide the rays' density. It also presents our multi-scale HexPlanes for fast inference and a new algorithm for efficient pixel sampling and convergence criteria. We present results in the STIR and SCARE datasets, for evaluating point tracking and testing the integration of kinematic data in our pipeline, respectively. In 2D point tracking, our approach surpasses the precision and accuracy of the TTO state-of-the-art methods by nearly 50% on average precision, while competing with other approaches. In 3D point tracking, this is the first TTO approach, surpassing feed-forward methods while incorporating the benefits of a deformable NeRF-based reconstruction. }
 }
 
 @inproceedings{zeng2024realistic,
@@ -107,85 +111,4 @@
   abbr={IJCARS},
   bibtex_show={true},
   html={https://link.springer.com/article/10.1007/s11548-019-02095-w}
-}
-
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
 }
