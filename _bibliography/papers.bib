@@ -3,35 +3,113 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{hu2025Autonomous,
+  title={Autonomous Robotic Exploration on Unknown Soft Object},
+  author={Hu, Junlei and Jones, Dominic and Loza Galindo, Gerardo and Huang, Shoudong and Valdastri, Pietro},
+  abstract={Robotic exploration of unknown soft objects presents significant challenges for autonomous systems due to unpredictable deformations and shape changes during manipulation. To address this, we propose a framework that integrates topology-aware 3D reconstruction with a topology-guided motion planner, enabling the discovery and reconstruction of previously hidden or concave regions. This topology-aware 3D reconstruction employs a novel representation of deformable objects by combining Cylinder Čech Complexes with point clouds, enabling rapid tracking of significant topology changes and detection of non-manifold boundaries.The topology analysis and canonical reconstruction guide motion planning by optimising grasp points and planning trajectories to reveal previously unseen surfaces through two actions: turning over and stretching. We validated our algorithm through simulations and experiments using the \textit{da Vinci} Research Kit, demonstrating successful exploration with two or three manipulators. We showed it can fully explore surfaces of two everyday objects, a beanie and a rubber glove, and two cadaveric organs, a liver and a colon, within seven manipulations. Our method achieved a 45.6% improvement in 3D reconstruction accuracy compared to state-of-the-art point-cloud-based methods while also demonstrating the capability to detect and fix non-manifold geometry.},
+  note={The International Journal of Robotics Research (IJRR) (Major Revision Submitted)},
+  year={2025},
+  abbr={IJRR},
+  publisher={SAGE}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+
+@article{hu2025Multiscale,
+  title={Multiscale Deformable Objects Manipulation via Wavelet-Decomposed Boundary Element Method},
+  author={Hu, Junlei and Jones, Dominic and Valdastri, Pietro},
+  note={Submitted to IEEE Transactions on Robotics (T-RO)},
+  year={2025},
+  abbr={IEEE T-RO},
+  abstract={Robotic deformable object manipulation faces critical challenges in surgical applications due to under-actuation, unpredictable tissue deformation, and limited intraoperative visibility. Traditional model-free methods often encounter unstable Jacobians caused by ill-conditioned observations, while physics-based models require precise tissue parameters and volumetric meshes, limiting their practicality in real surgeries. We propose a wavelet-Boundary Element Method (BEM) framework that encodes deformations from partial 3D shape feedback using multiscale wavelet descriptors. Coupling wavelets with BEM allows computation of the nonlinear motion-deformation mapping via boundary integrals, eliminating the need for volumetric meshes and enabling real-time control under occluded views. We validate our approach in simulation and on the da Vinci Research Kit (dVRK) using phantom organs and ex vivo animal tissue, achieving millimetre-level accuracy with contour, curve, and surface feedback. Comparative studies with Fourier-based and model-free methods show superior stability in dexterous tissue manipulation, addressing ill-conditioning through spatial-frequency localization. This framework enhances robotic manipulation in unstructured surgical environments, providing robust control and accurate tissue interaction despite partial observability. Our results demonstrate its potential to improve precision and safety in minimally invasive procedures.},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+
+@article{hu2025Instantaneous,
+    author = {Hu, Junlei and Jiang, Xiaoyan and Zhu, Gang and Cao, Zhenggang and Gao, Yao and Zhang, Zhaodong and Han, Jing and Liu, Jiannan},
+    title = {Instantaneous and Markerless Registration for Mandible Reconstruction Robot with Fibular Holder},
+    journal = {IEEE Transactions on Medical Robotics and Bionics (T-MRB)},
+    year = {2025},
+    abbr = {IEEE T-MRB},
+    bibtex_show={true},
+    html={https://ieeexplore.ieee.org/document/11145193/}
 }
+
+
+@article{loza2025surg,
+  title={Surg-InvNeRF: Invertible NeRF for 3D tracking and reconstruction in surgical vision},
+  author={Loza, Gerardo and Hu, Junlei and Jones, Dominic and Ali, Sharib and Valdastri, Pietro},
+  journal={arXiv preprint arXiv:2508.09681 (Submitted to IEEE Transactions on Medical Imaging)},
+  year={2025},
+  abbr={arXiv},
+  note={Under Review},
+  bibtex_show={true},
+}
+
+@inproceedings{zeng2024realistic,
+  title={Realistic surgical image dataset generation based on 3d gaussian splatting},
+  author={Zeng, Tianle and Loza Galindo, Gerardo and Hu, Junlei and Valdastri, Pietro and Jones, Dominic},
+  abstract={Computer vision technologies markedly enhance the automation capabilities of robotic-assisted minimally invasive surgery (RAMIS) through advanced tool tracking, detection, and localization. However, the limited availability of comprehensive surgical datasets for training represents a significant challenge in this field. This research introduces a novel method that employs 3D Gaussian Splatting to generate synthetic surgical datasets. We propose a method for extracting and combining 3D Gaussian representations of surgical instruments and background operating environments, transforming and combining them to generate high-fidelity synthetic surgical scenarios. We developed a data recording system capable of acquiring images alongside tool and camera poses in a surgical scene. Using this pose data, we synthetically replicate the scene, thereby enabling direct comparisons of the synthetic image quality (27.796\pm1.796 PSNR). As a further validation, we compared two YOLOv5 models trained on the synthetic and real data, respectively, and assessed their performance in an unseen real-world test dataset. Comparing the performances, we observe an improvement in neural network performance, with the synthetic-trained model outperforming the real-world trained model by 12\%, testing both on real-world data.},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
+  pages={510--519},
+  year={2024},
+  organization={Springer},
+  abbr={MICCAI 2024},
+  bibtex_show={true},
+}
+
+
+@article{hu2023occlusion,
+  bibtex_show={true},
+  abstract={Robotic manipulation of 3-D soft objects remains challenging in the industrial and medical fields. Various methods based on mechanical modeling, data-driven approaches or explicit feature tracking have been proposed. A unifying disadvantage of these methods is the high computational cost of simultaneous imaging processing, identification of mechanical properties, and motion planning, leading to a need for less computationally intensive methods. We propose a method for autonomous robotic manipulation with 3-D surface feedback to solve these issues. First, we produce a deformation model of the manipulated object, which estimates the robots' movements by monitoring the displacement of surface points surrounding the manipulators. Then, we develop a 6-degree-of-freedom velocity controller to manipulate the grasped object to achieve a desired shape. We validate our approach through comparative simulations with existing methods and experiments using phantom and cadaveric soft tissues with the da Vinci research kit. The results demonstrate the robustness of the technique to occlusions and various materials. Compared to state-of-the-art linear and data-driven methods, our approach is more precise by 46.5% and 15.9% and saves 55.2% and 25.7% manipulation time, respectively.},
+  title={Occlusion-Robust Autonomous Robotic Manipulation of Human Soft Tissues With 3-D Surface Feedback},
+  author={Hu, Junlei and Jones, Dominic and Dogar, Mehmet R and Valdastri, Pietro},
+  journal={IEEE Transactions on Robotics (T-RO)},
+  volume={40},
+  pages={624--638},
+  year={2023},
+  publisher={IEEE},
+  abbr={IEEE T-RO},
+  website={/websites/gpwrm/},
+  selected={true},
+}
+
+@inproceedings{hu2023coordinate,
+  title={Coordinate Calibration of a Dual-Arm Robot System by Visual Tool Tracking},
+  author={Hu, Junlei and Jones, Dominic and Valdastri, Pietro},
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={11468--11473},
+  year={2023},
+  organization={IEEE},
+  abbr={ICRA 2023}
+}
+
+@article{li2020automatic,
+  title={Automatic robot-world calibration in an optical-navigated surgical robot system and its application for oral implant placement},
+  author={Li*, Yang and Hu*, Junlei and Tao, Baoxin and Yu, Dedong and Shen, Yihan and Fan, Shengchi and Wu, Yiqun and Chen, Xiaojun},
+  journal={International Journal of Computer Assisted Radiology and Surgery (IJCARS)},
+  volume={15},
+  pages={1685--1692},
+  year={2020},
+  publisher={Springer},
+  abbr={IJCARS},
+  bibtex_show={true},
+  html={https://link.springer.com/article/10.1007/s11548-020-02232-w}
+}
+
+@article{hu2020approach,
+  title={An approach to automated measuring morphological parameters of proximal femora on three-dimensional models},
+  author={Hu, Junlei and Xu, Liyu and Jing, Mengjie and Zhang, Henghui and Wang, Liao and Chen, Xiaojun},
+  journal={International Journal of Computer Assisted Radiology and Surgery},
+  volume={15},
+  number={1},
+  pages={109--118},
+  year={2020},
+  publisher={Springer},
+  abbr={IJCARS},
+  bibtex_show={true},
+  html={https://link.springer.com/article/10.1007/s11548-019-02095-w}
+}
+
 
 @article{PhysRev.47.777,
   abbr={PhysRev},
@@ -57,7 +135,6 @@
   video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
   additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
   annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
   inspirehep_id = {3255}
 }
 
