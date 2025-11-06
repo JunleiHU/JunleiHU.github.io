@@ -1,28 +1,19 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Junlei Hu",
     "label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "J.Hu2@leeds.ac.uk",
+    "url": "https://JunleiHu.github.io/",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+      "address": "Woodhouse",
+      "postalCode": "LS2 9JT",
+      "city": "Leeds",
+      "countryCode": "GB",
+      "region": "England"
+    }
   },
-  "work": [
+  "_work": [
     {
       "name": "Institute for Advanced Study, Princeton University",
       "position": "Professor of Theoretical Physics",
@@ -33,7 +24,7 @@
       "highlights": ["Relativity"]
     }
   ],
-  "volunteer": [
+  "_volunteer": [
     {
       "organization": "People's Climate March",
       "location": "Zurich, Switzerland",
@@ -47,18 +38,33 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "University of Leeds",
+      "location": "Leeds, UK",
+      "url": "https://www.stormlabuk.com/",
+      "area": "Surgical Robotics",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "startDate": "2021-10-01",
+      "endDate": "2025-09-30",
+      "courses": ["From Conformation to Exploration: Advancing Autonomous Robotic Manipulation of Soft Organs in Laparoscopy"]
+    },
+    {
+      "institution": "Shanghai Jiao Tong University",
+      "location": "Shanghai, China",
+      "area": "Medical Robotics",
+      "studyType": "MSc",
+      "startDate": "2017-09-01",
+      "endDate": "2020-03-31"
+    },
+    {
+      "institution": "Shanghai Jiao Tong University",
+      "location": "Shanghai, China",
+      "area": "Mechanical Engineering",
+      "studyType": "BSc",
+      "startDate": "2013-09-01",
+      "endDate": "2017-06-30"
     }
   ],
-  "awards": [
+  "_awards": [
     {
       "title": "Nobel Prize in Physics",
       "date": "1921-11-01",
@@ -67,7 +73,7 @@
       "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
     }
   ],
-  "certificates": [
+  "_certificates": [
     {
       "name": "Machine Learning",
       "date": "2018-01-01",
@@ -111,7 +117,7 @@
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
-  "publications": [
+  "_publications": [
     {
       "name": "Zur Elektrody/namik bewegter Körper",
       "publisher": "Annalen der Physik",
@@ -134,7 +140,7 @@
       "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
-  "skills": [
+  "_skills": [
     {
       "name": "Physics",
       "level": "Master",
@@ -151,7 +157,7 @@
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Chinese",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -161,7 +167,7 @@
       "icon": ""
     }
   ],
-  "interests": [
+  "_interests": [
     {
       "name": "Physics",
       "icon": "fa-solid fa-tag",
@@ -175,7 +181,7 @@
       ]
     }
   ],
-  "references": [
+  "_references": [
     {
       "name": "Professor John Doe",
       "icon": "fa-solid fa-laptop",
@@ -187,7 +193,7 @@
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ],
-  "projects": [
+  "_projects": [
     {
       "name": "Quantum Computing",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
