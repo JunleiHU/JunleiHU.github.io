@@ -6,7 +6,7 @@ img: assets/img/12.jpg
 related_publications: true
 ---
 
-# Abstract
+<h1 style="text-align: center;">Abstract</h1>
 <div align="justify">
 Robotic deformable object manipulation faces critical challenges in surgical applications due to under-actuation, unpredictable tissue deformation, and limited intraoperative visibility. 
 Traditional model-free methods often encounter unstable Jacobians caused by ill-conditioned observations, while physics-based models require precise tissue parameters and volumetric meshes, limiting their practicality in real surgeries. 
@@ -16,6 +16,10 @@ Comparative studies with Fourier-based and model-free methods show superior stab
 This framework enhances robotic manipulation in unstructured surgical environments, providing robust control and accurate tissue interaction despite partial observability. 
 Our results demonstrate its potential to improve precision and safety in minimally invasive procedures.
 </div>
+
+<h1 style="text-align: center;">Simulations</h1>
+We demonstrate the performance of 
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
