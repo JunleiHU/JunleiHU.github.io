@@ -7,7 +7,7 @@ img: assets/img/12.jpg
 ---
 
 <h1 style="text-align: center;">Abstract</h1>
-<div align="justify">
+<div style="width: 75%; margin: 0 auto; text-align: justify;">
 Robotic exploration of unknown soft objects presents significant challenges for autonomous systems due to unpredictable deformations and shape changes during manipulation. To address this, we propose a framework that integrates topology-aware 3D reconstruction with a topology-guided motion planner, enabling the discovery and reconstruction of previously hidden or concave regions. This topology-aware 3D reconstruction employs a novel representation of deformable objects by combining Cylinder Čech Complexes with point clouds, enabling rapid tracking of significant topology changes and detection of non-manifold boundaries.The topology analysis and canonical reconstruction guide motion planning by optimising grasp points and planning trajectories to reveal previously unseen surfaces through two actions: turning over and stretching. We validated our algorithm through simulations and experiments using the \textit{da Vinci} Research Kit, demonstrating successful exploration with two or three manipulators. We showed it can fully explore surfaces of two everyday objects, a beanie and a rubber glove, and two cadaveric organs, a liver and a colon, within seven manipulations. Our method achieved a 45.6% improvement in 3D reconstruction accuracy compared to state-of-the-art point-cloud-based methods while also demonstrating the capability to detect and fix non-manifold geometry.
 </div>
 <br>
