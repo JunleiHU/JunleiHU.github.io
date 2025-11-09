@@ -31,66 +31,21 @@ ninja.data = [{
             },},{id: "news-i-co-presented-a-talk-with-prof-pietro-valdastri-at-the-iros-2025-workshop-soft-tissue-manipulation-in-robotic-surgery-titled-from-conformation-to-exploration-advancing-autonomous-robotic-manipulation-of-soft-organs-in-laparoscopy",
           title: 'I co-presented a talk with Prof. Pietro Valdastri at the IROS 2025 workshop...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
-            },},{id: "websites-multiscale-deformable-objects-manipulation-via-wavelet-decomposed-boundary-element-method",
+          section: "News",},{id: "projects-multiscale-deformable-objects-manipulation-via-wavelet-decomposed-boundary-element-method",
           title: 'Multiscale Deformable Objects Manipulation via Wavelet-Decomposed Boundary Element Method',
           description: "",
-          section: "Websites",handler: () => {
-              window.location.href = "/websites/dwtbem/";
-            },},{id: "websites-autonomous-robotic-exploration-on-unknown-soft-object",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dwtbem/";
+            },},{id: "projects-autonomous-robotic-exploration-on-unknown-soft-object",
           title: 'Autonomous Robotic Exploration on Unknown Soft Object',
           description: "",
-          section: "Websites",handler: () => {
-              window.location.href = "/websites/exploration/";
-            },},{id: "websites-occlusion-robust-autonomous-robotic-manipulation-of-human-soft-tissues-with-3-d-surface-feedback",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/exploration/";
+            },},{id: "projects-occlusion-robust-autonomous-robotic-manipulation-of-human-soft-tissues-with-3-d-surface-feedback",
           title: 'Occlusion-Robust Autonomous Robotic Manipulation of Human Soft Tissues With 3-D Surface Feedback',
           description: "",
-          section: "Websites",handler: () => {
-              window.location.href = "/websites/gpwrm/";
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/gpwrm/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
