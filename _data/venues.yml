@@ -1,9 +1,15 @@
 "IJCARS":
   url: https://link.springer.com/journal/11548
-  color: "#00369f"
+  color: "#00857C"
 
 "PhysRev":
   url: https://journals.aps.org/
 
 "IEEE T-RO":
-  color: "#009f36"
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8860
+  color: "#0054A5"
+
+"IJRR":
+  url: https://journals.sagepub.com/home/ijr
+  color: "#003366"
+

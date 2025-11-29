@@ -4,7 +4,15 @@ title: Multiscale Deformable Objects Manipulation via Wavelet-Decomposed Boundar
 # description: with background image
 img: assets/img/12.jpg
 related_publications: false
+github: https://github.com/JunleiHU/DWT-BEM
 ---
+
+<div style="text-align: center; margin: 30px 0;">
+    <a href="https://github.com/JunleiHU/DWT-BEM" class="btn btn-dark" target="_blank" style="padding: 12px 25px;">
+        <i class="fab fa-github"></i> Code
+    </a>
+</div>
+
 
 <h1 style="text-align: center;">Abstract</h1>
 <div style="width: 75%; margin: 0 auto; text-align: justify;">

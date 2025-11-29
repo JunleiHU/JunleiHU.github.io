@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Surgical Robotics PhD @ <a href='https://www.stormlabuk.com/'>Stormlab</a> University of Leeds. 
+subtitle: Surgical Robotics Researcher @ <a href='https://www.stormlabuk.com/'>Stormlab</a> University of Leeds. 
 
 profile:
   align: right
@@ -26,10 +26,11 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a fourth-year PhD student in autonomous surgical robotics at [Stormlab](https://www.stormlabuk.com/), University of Leeds, advised by [Prof. Pietro Valdastri](https://eps.leeds.ac.uk/electronic-engineering/staff/863/professor-pietro-valdastri). 
+I am a Research Fellow in Medical Robotics at the [Stormlab](https://www.stormlabuk.com/), University of Leeds, where my research focuses on autonomous robotic laparoscopy.
+I recently earned my PhD from the University of Leeds, where I developed autonomous systems for surgical robotics under the advisement of [Prof. Pietro Valdastri](https://eps.leeds.ac.uk/electronic-engineering/staff/863/professor-pietro-valdastri). My doctoral research specialized in the challenge of deformable tissue manipulation.
 I received my M.S. and B.E. degrees from the School of Mechanical Engineering, Shanghai Jiao Tong University.
 
-My current Ph.D. work is centered on the [da Vinci Research Kit (dVRK)](https://www.intuitive-foundation.org/dvrk/) for laparoscopic surgery, under the theme *“From Conformation to Exploration: Advancing Autonomous Robotic Manipulation of Soft Organs in Laparoscopy”*. The project aims to achieve more complete autonomous surgical capabilities, enabling robots to actively manipulate and explore soft organs to improve surgical outcomes.
+My current research work is centered on the [da Vinci Research Kit (dVRK)](https://www.intuitive-foundation.org/dvrk/) for laparoscopic surgery, under the theme *“From Conformation to Exploration: Advancing Autonomous Robotic Manipulation of Soft Organs in Laparoscopy”*. The project aims to achieve more complete autonomous surgical capabilities, enabling robots to actively manipulate and explore soft organs to improve surgical outcomes.
 
 
 My research focuses on advancing minimally invasive surgery through innovations in robotics and AI, specializing in three core technical domains:
