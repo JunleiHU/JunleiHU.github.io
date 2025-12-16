@@ -29,10 +29,13 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
             },},{id: "news-i-co-presented-a-talk-with-prof-pietro-valdastri-at-the-iros-2025-workshop-soft-tissue-manipulation-in-robotic-surgery-titled-from-conformation-to-exploration-advancing-autonomous-robotic-manipulation-of-soft-organs-in-laparoscopy",
-          title: 'I co-presented a talk with Prof. Pietro Valdastri at the IROS 2025 workshop...',
+          title: '🎤 I co-presented a talk with Prof. Pietro Valdastri at the IROS 2025...',
           description: "",
-          section: "News",},{id: "news-thrilled-to-announce-that-i-have-successfully-passed-my-phd-viva-and-i-am-going-to-be-the-research-fellow-in-medical-robotics-at-the-stormlab",
-          title: 'Thrilled to announce that I have successfully passed my PhD viva! And I...',
+          section: "News",},{id: "news-thrilled-to-announce-that-i-have-successfully-passed-my-phd-viva-and-i-am-going-to-be-a-research-fellow-in-medical-robotics-at-stormlab",
+          title: '🎓 Thrilled to announce that I have successfully passed my PhD viva! And...',
+          description: "",
+          section: "News",},{id: "news-autonomous-robotic-exploration-on-unknown-soft-object-has-been-accepted-by-the-international-journal-of-robotics-research-ijrr",
+          title: '🎉 “Autonomous Robotic Exploration on Unknown Soft Object” has been accepted by the...',
           description: "",
           section: "News",},{id: "projects-multiscale-deformable-objects-manipulation-via-wavelet-decomposed-boundary-element-method",
           title: 'Multiscale Deformable Objects Manipulation via Wavelet-Decomposed Boundary Element Method',
