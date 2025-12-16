@@ -5,4 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Thrilled to announce that I have successfully passed my PhD viva! And I am going to be the Research Fellow in medical robotics at the [Stormlab](https://www.stormlabuk.com/).
+🎓 Thrilled to announce that I have successfully passed my **PhD viva**!  
+And I am going to be a **Research Fellow in medical robotics** at **[Stormlab](https://www.stormlabuk.com/)**.
