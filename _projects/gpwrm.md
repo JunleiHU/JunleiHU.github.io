@@ -6,36 +6,39 @@ img: assets/img/12.jpg
 related_publications: false
 ---
 
+<style>
+.gpwrm-links{display:flex;justify-content:center;flex-wrap:wrap;gap:.6rem;margin:0 0 2rem}
+.gpwrm-links a,.gpwrm-demo-link{display:inline-block;padding:.48rem .9rem;border:1px solid var(--global-theme-color);border-radius:4px;color:var(--global-theme-color);text-decoration:none;font-size:.95rem;line-height:1.5;box-shadow:none;background:transparent}
+.gpwrm-links a:first-child,.gpwrm-links a:hover,.gpwrm-demo-link:hover{color:var(--global-bg-color,#fff);background:var(--global-theme-color)}
+.gpwrm-links a:focus-visible,.gpwrm-demo-link:focus-visible{outline:2px solid var(--global-theme-color);outline-offset:3px}
+</style>
+<div class="gpwrm-links">
+  <a class="gpwrm-demo-link" href="https://ieeexplore.ieee.org/document/10328689">Paper · IEEE Xplore ↗</a>
+  <a class="gpwrm-demo-link" href="https://doi.org/10.1109/TRO.2023.3335693">DOI ↗</a>
+  <a class="gpwrm-demo-link" href="#interactive-method">Interactive method ↓</a>
+  <a class="gpwrm-demo-link" href="#simulations">Experiments ↓</a>
+</div>
 <h1 style="text-align: center;">Abstract</h1>
 <div style="width: 75%; margin: 0 auto; text-align: justify;">
 Robotic manipulation of 3-D soft objects remains challenging in the industrial and medical fields. Various methods based on mechanical modeling, data-driven approaches or explicit feature tracking have been proposed. A unifying disadvantage of these methods is the high computational cost of simultaneous imaging processing, identification of mechanical properties, and motion planning, leading to a need for less computationally intensive methods. We propose a method for autonomous robotic manipulation with 3-D surface feedback to solve these issues. First, we produce a deformation model of the manipulated object, which estimates the robots' movements by monitoring the displacement of surface points surrounding the manipulators. Then, we develop a 6-degree-of-freedom velocity controller to manipulate the grasped object to achieve a desired shape. We validate our approach through comparative simulations with existing methods and experiments using phantom and cadaveric soft tissues with the da Vinci research kit. The results demonstrate the robustness of the technique to occlusions and various materials. Compared to state-of-the-art linear and data-driven methods, our approach is more precise by 46.5% and 15.9% and saves 55.2% and 25.7% manipulation time, respectively.
 </div>
 
-<br>
-<h1 style="text-align: center;">Grid-Point–Based Weighted Residual Method</h1>
-<div style="margin: 0 auto; text-align: justify;">
-The proposed shape representation, built from grid points and a deformation field, is discretized using the weighted residual method. This formulation captures the nonlinear relationship between the robot's motion and the surrounding displacement field, explicitly accounting for grasping points located on the surface.
-</div>
+<section id="interactive-method" style="margin:2rem 0;">
+<h1 style="text-align:center;">Interactive Method</h1>
+<p style="text-align:justify;">Explore how non-rigid registration produces a displacement field, how grid-point weighted residuals relate tissue deformation to grasp-point motion, and how repeated feedback reduces shape error. Select any numbered stage to play it from the beginning; playback pauses at the end of that stage.</p>
+<iframe id="gpwrm-interactive" src="{{ '/assets/html/gpwrm/index.html' | relative_url }}" title="GP-WRM interactive method explanation" loading="lazy" allow="autoplay; fullscreen" allowfullscreen style="display:block;width:100%;height:720px;border:0;border-radius:8px;background:#0a0d11;"></iframe>
 
-<div class="row justify-content-center">
-    <div class="col-sm-5 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/gpwrm_figure2a.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/gpwrm_figure2b.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
+<script>
+window.addEventListener('message', function (event) {
+  var frame = document.getElementById('gpwrm-interactive');
+  if (event.origin !== window.location.origin || event.source !== frame.contentWindow || !event.data || event.data.type !== 'gpwrm-resize') return;
+  var height = Number(event.data.height);
+  if (Number.isFinite(height) && height > 200 && height < 3000) frame.style.height = Math.ceil(height) + 'px';
+});
+</script>
+</section>
 <br>
-<h1 style="text-align: center;">Iterative Controller</h1>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/gpwrm_figure3.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-<br>
-<h1 style="text-align: center;">Simulations</h1>
+<h1 id="simulations" style="text-align: center;">Simulations</h1>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
