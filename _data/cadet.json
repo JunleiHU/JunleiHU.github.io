@@ -1,0 +1,112 @@
+[
+  {
+    "group": "pancreas",
+    "id": "pancreas-exvivo-decoupled",
+    "title": "Ex vivo \u00b7 decoupled",
+    "caption": "The porcine stomach and pancreas are not attached. Probing identifies ineffective transmission.",
+    "source": "pancreas.mp4",
+    "start_frame": 109,
+    "end_frame_exclusive": 709,
+    "fps": 24
+  },
+  {
+    "group": "pancreas",
+    "id": "pancreas-exvivo-blocked",
+    "title": "Ex vivo \u00b7 constraint engagement",
+    "caption": "Attached tissues encounter a surrounding constraint; the belief responds as the interaction changes.",
+    "source": "pancreas.mp4",
+    "start_frame": 818,
+    "end_frame_exclusive": 1418,
+    "fps": 24
+  },
+  {
+    "group": "pancreas",
+    "id": "pancreas-phantom-coupled",
+    "title": "Phantom \u00b7 coupled",
+    "caption": "The attached stomach transmits deformation to the pancreas model.",
+    "source": "pancreas.mp4",
+    "start_frame": 1527,
+    "end_frame_exclusive": 2127,
+    "fps": 24
+  },
+  {
+    "group": "pancreas",
+    "id": "pancreas-phantom-decoupled",
+    "title": "Phantom \u00b7 decoupled",
+    "caption": "The stomach and pancreas models are not attached.",
+    "source": "pancreas.mp4",
+    "start_frame": 2236,
+    "end_frame_exclusive": 2836,
+    "fps": 24
+  },
+  {
+    "group": "mesentery",
+    "id": "mesentery-exvivo-coupled",
+    "title": "Ex vivo \u00b7 coupled",
+    "caption": "The robot manipulates the colon to deform the attached porcine mesentery.",
+    "source": "mesentery.mp4",
+    "start_frame": 109,
+    "end_frame_exclusive": 709,
+    "fps": 24
+  },
+  {
+    "group": "mesentery",
+    "id": "mesentery-exvivo-decoupled",
+    "title": "Ex vivo \u00b7 decoupled",
+    "caption": "The porcine colon and mesentery are not attached.",
+    "source": "mesentery.mp4",
+    "start_frame": 818,
+    "end_frame_exclusive": 1418,
+    "fps": 24
+  },
+  {
+    "group": "mesentery",
+    "id": "mesentery-phantom-coupled",
+    "title": "Phantom \u00b7 coupled",
+    "caption": "A simplified intestinal phantom demonstrates effective deformation transmission.",
+    "source": "mesentery.mp4",
+    "start_frame": 1527,
+    "end_frame_exclusive": 2127,
+    "fps": 24
+  },
+  {
+    "group": "mesentery",
+    "id": "mesentery-phantom-blocked",
+    "title": "Phantom \u00b7 constraint engagement",
+    "caption": "The attached target encounters a surrounding constraint during manipulation.",
+    "source": "mesentery.mp4",
+    "start_frame": 2236,
+    "end_frame_exclusive": 2836,
+    "fps": 24
+  },
+  {
+    "group": "simulation",
+    "id": "simulation-decoupled",
+    "title": "Decoupled",
+    "caption": "No attachment transmits stomach motion to the pancreatic target.",
+    "source": "Simulation.mp4",
+    "start_frame": 109,
+    "end_frame_exclusive": 709,
+    "fps": 24
+  },
+  {
+    "group": "simulation",
+    "id": "simulation-coupled",
+    "title": "Coupled",
+    "caption": "The attached proxy transmits motion to the target.",
+    "source": "Simulation.mp4",
+    "start_frame": 818,
+    "end_frame_exclusive": 1418,
+    "fps": 24
+  },
+  {
+    "group": "simulation",
+    "id": "simulation-blocked",
+    "title": "Constraint engagement",
+    "caption": "The coupled target interacts with an external constraint.",
+    "source": "Simulation.mp4",
+    "start_frame": 1527,
+    "end_frame_exclusive": 2127,
+    "fps": 24
+  }
+]
