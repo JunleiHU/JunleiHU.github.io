@@ -14,10 +14,23 @@
   html={https://arxiv.org/abs/2609.38483},
   pdf={https://arxiv.org/pdf/2609.38483},
   website={/projects/cadet/},
-  selected={true},
+  selected={false},
   bibtex_show={true},
-  preview={cadet_preview.png},
+  preview={cadet_preview.gif},
   abstract={Indirect manipulation of deep-seated deformable anatomy inaccessible to the robot is challenging in robot-assisted minimally invasive surgery (RAMIS) because intervening tissues spatially filter deformation transmission. Passive observations can be ambiguous because the Decoupled and Blocked modes may produce similar motion responses. We propose CADeT, a causal-aware deformation transmission framework that integrates structural causal model (SCM) with active sensing to infer a latent transmission mode and estimate a state-dependent adhesion Jacobian online. During normal manipulation, control actions update the mode belief; when ambiguity persists, an additional probing action is selected to improve mode distinguishability. The mode belief and learned Jacobian are incorporated into a belief-aware model predictive controller for indirect target-shape control. Validation in simulation and on the da Vinci research kit (dVRK), using phantom and ex vivo porcine tissues, shows higher mode-identification accuracy and faster shape-error convergence than the evaluated model-free and model-based baselines. These results show that active sensing improves mode identification and indirect deformation control under the evaluated conditions.}
+}
+
+@inproceedings{hu2026hybrid,
+  title={Hybrid Geometric and Latent Shape Servoing for Autonomous Gallbladder Exposure},
+  author={Hu, Junlei and Jones, Dominic and Valdastri, Pietro},
+  booktitle={2026 11th IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)},
+  year={2026},
+  pages={1096--1102},
+  abbr={BioRob 2026},
+  bibtex_show={true},
+  html={https://ieeexplore.ieee.org/abstract/document/11681351},
+  preview={biorob2026_preview.gif},
+  abstract={Autonomous manipulation of deformable tissue remains challenging in robotic surgery due to complex soft-tissue dynamics and limited observability. This paper presents a hybrid visual servoing framework for autonomous gallbladder exposure in Robotic-Assisted Minimally Invasive Surgery (RAMIS). To overcome the limitations of purely geometric controllers, which can induce unsafe null-space deformations, we propose a composite state representation that combines an explicit geometric objective with an implicit physical regularizer. The liver ridge is modeled as a B-spline curve to define the exposure task, while global tissue deformation is encoded by a latent descriptor learned using a Partial-to-Complete PointNet autoencoder (AE) trained on preoperative anatomical data. A composite Jacobian-based control law jointly minimizes ridge alignment error and latent deviation, enabling safe and robust control under partial observability. Experiments on the da Vinci Research Kit (dVRK) with realistic phantoms demonstrate improved safety and robustness over standard geometric servoing.}
 }
 
 @article{hu2025Autonomous,

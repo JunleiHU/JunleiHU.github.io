@@ -13,7 +13,6 @@ github: https://github.com/JunleiHU/DWT-BEM
     </a>
 </div>
 
-
 <h1 style="text-align: center;">Abstract</h1>
 <div style="width: 75%; margin: 0 auto; text-align: justify;">
 Robotic deformable object manipulation faces critical challenges in surgical applications due to under-actuation, unpredictable tissue deformation, and limited intraoperative visibility. 
@@ -27,7 +26,6 @@ Our results demonstrate its potential to improve precision and safety in minimal
 
 <br>
 <h1 style="text-align: center;">Simulations</h1>
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -73,7 +71,6 @@ Our results demonstrate its potential to improve precision and safety in minimal
         {% include video.liquid path="assets/video/Simulation_Sub_12.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
-
 
 <br>
 <h1 style="text-align: center;">Phantom Experiments</h1>

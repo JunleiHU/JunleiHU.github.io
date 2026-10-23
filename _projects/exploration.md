@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Autonomous Robotic Exploration on Unknown Soft Object 
+title: Autonomous Robotic Exploration on Unknown Soft Object
 # description: with background image
 img: assets/img/12.jpg
 # related_publications: true
@@ -51,4 +51,3 @@ Robotic exploration of unknown soft objects presents significant challenges for 
 <div class="caption">
     Robotic exploration on a beanie.
 </div>
-
