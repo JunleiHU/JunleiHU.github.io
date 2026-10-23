@@ -33,6 +33,22 @@
   abstract={Autonomous manipulation of deformable tissue remains challenging in robotic surgery due to complex soft-tissue dynamics and limited observability. This paper presents a hybrid visual servoing framework for autonomous gallbladder exposure in Robotic-Assisted Minimally Invasive Surgery (RAMIS). To overcome the limitations of purely geometric controllers, which can induce unsafe null-space deformations, we propose a composite state representation that combines an explicit geometric objective with an implicit physical regularizer. The liver ridge is modeled as a B-spline curve to define the exposure task, while global tissue deformation is encoded by a latent descriptor learned using a Partial-to-Complete PointNet autoencoder (AE) trained on preoperative anatomical data. A composite Jacobian-based control law jointly minimizes ridge alignment error and latent deviation, enabling safe and robust control under partial observability. Experiments on the da Vinci Research Kit (dVRK) with realistic phantoms demonstrate improved safety and robustness over standard geometric servoing.}
 }
 
+@article{loza2026drends,
+  title={A Dataset for Depth in Robotic Endoscopy with Dynamic Scenarios (DRENDS)},
+  author={Loza-Galindo, Gerardo and Magro, Mattia and Calmé, Benjamin and Hu, Junlei and Ruffaldi, Emanuele and Jones, Dominic and De Momi, Elena and Ali, Sharib and Valdastri, Pietro},
+  journal={Scientific Data},
+  year={2026},
+  doi={10.1038/s41597-026-07775-2},
+  abbr={Sci. Data},
+  html={https://www.nature.com/articles/s41597-026-07775-2},
+  dataset={https://doi.org/10.5281/zenodo.17598453},
+  max_author_limit={9},
+  bibtex_show={true},
+  selected={false},
+  preview={drends_preview.png},
+  abstract={DRENDS provides high-resolution stereo endoscopic sequences of robotic manipulation of a human phantom and ex vivo porcine tissues, paired with per-frame ground-truth point clouds and calibration data. The recordings cover tissue deformation under three illumination conditions. Open-source processing tools and depth-estimation benchmarks support reproducible evaluation in dynamic surgical scenes.}
+}
+
 @article{hu2025Autonomous,
   title={Autonomous robotic exploration of unknown soft objects},
   author={Hu, Junlei and Jones, Dominic and Loza Galindo, Gerardo and Huang, Shoudong and Valdastri, Pietro},
