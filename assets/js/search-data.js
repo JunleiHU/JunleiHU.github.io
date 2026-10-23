@@ -40,7 +40,21 @@ ninja.data = [{
           section: "News",},{id: "news-multiscale-deformable-objects-manipulation-via-wavelet-decomposed-boundary-element-method-has-been-accepted-by-the-international-journal-of-robotics-research-ijrr",
           title: '🎉 “Multiscale Deformable Objects Manipulation via Wavelet-Decomposed Boundary Element Method” has been accepted...',
           description: "",
-          section: "News",},{id: "projects-multiscale-deformable-objects-manipulation-via-wavelet-decomposed-boundary-element-method",
+          section: "News",},{id: "news-our-university-of-leeds-team-received-the-champion-award-for-task-1-safe-needle-picking-and-the-best-demo-award-for-task-3-vessel-clipping-at-autosurg-2026-part-of-the-mrc-hamlyn-workshop-in-london",
+          title: '🏆 Our University of Leeds team received the Champion Award for Task 1:...',
+          description: "",
+          section: "News",},{id: "news-new-preprint-cadet-causal-aware-deformation-transmission-for-indirect-robotic-manipulation-of-soft-tissue-explore-the-project-page-and-experiment-videos-or-read-the-paper-on-arxiv",
+          title: '📄 New preprint: CADeT: Causal-Aware Deformation Transmission for Indirect Robotic Manipulation of Soft...',
+          description: "",
+          section: "News",},{id: "news-our-paper-autonomous-robotic-exploration-of-unknown-soft-objects-is-featured-on-the-cover-of-the-international-journal-of-robotics-research-volume-45-issue-12-october-2026",
+          title: '🎉 Our paper, “Autonomous robotic exploration of unknown soft objects”, is featured on...',
+          description: "",
+          section: "News",},{id: "projects-cadet",
+          title: 'CADeT',
+          description: "Causal-Aware Deformation Transmission for Indirect Robotic Manipulation of Soft Tissue",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cadet/";
+            },},{id: "projects-multiscale-deformable-objects-manipulation-via-wavelet-decomposed-boundary-element-method",
           title: 'Multiscale Deformable Objects Manipulation via Wavelet-Decomposed Boundary Element Method',
           description: "",
           section: "Projects",handler: () => {
