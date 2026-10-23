@@ -53,5 +53,3 @@ Robotic exploration of unknown soft objects presents significant challenges for 
 <div class="caption">
     Robotic exploration on a beanie.
 </div>
-
-

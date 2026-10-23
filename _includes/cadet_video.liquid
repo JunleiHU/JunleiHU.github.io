@@ -1,6 +1,14 @@
 <figure>
-  <video controls playsinline preload="none" poster="{{ '/assets/img/cadet/' | append: include.clip.id | append: '.jpg' | relative_url }}" aria-label="{{ include.clip.title | escape }}: {{ include.clip.caption | escape }}">
+  <video
+    controls
+    playsinline
+    preload="none"
+    poster="{{ '/assets/img/cadet/' | append: include.clip.id | append: '.jpg' | relative_url }}"
+    aria-label="{{ include.clip.title | escape }}: {{ include.clip.caption | escape }}"
+  >
     <source src="{{ '/assets/video/cadet/' | append: include.clip.id | append: '.mp4' | relative_url }}" type="video/mp4">
   </video>
-  <figcaption><strong>{{ include.clip.title }}</strong>{{ include.clip.caption }}</figcaption>
+  <figcaption>
+    <strong>{{ include.clip.title }}</strong>{{ include.clip.caption }}
+  </figcaption>
 </figure>

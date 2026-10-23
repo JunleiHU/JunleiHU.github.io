@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 Our paper, *“[Autonomous robotic exploration of unknown soft objects](/projects/exploration/)”*, is **featured on the cover of The International Journal of Robotics Research**, [Volume 45, Issue 12 (October 2026)](https://journals.sagepub.com/toc/ijr/45/12).
+🎉 Our paper, _“[Autonomous robotic exploration of unknown soft objects](/projects/exploration/)”_, is **featured on the cover of The International Journal of Robotics Research**, [Volume 45, Issue 12 (October 2026)](https://journals.sagepub.com/toc/ijr/45/12).
