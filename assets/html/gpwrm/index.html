@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GP-WRM · Interactive explanation</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0a0d11;
+        --fg: #e2e9ee;
+        --muted: #8596a2;
+        --gold: #f8cd04;
+        --line: #303c46;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font:
+          15px Arial,
+          Helvetica,
+          sans-serif;
+        min-height: 0;
+        display: grid;
+        place-items: center;
+      }
+      main {
+        width: min(1600px, 100%);
+        padding: 12px 20px 20px;
+      }
+      .stage {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16/9;
+        background: var(--bg);
+      }
+      video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .chapters {
+        position: absolute;
+        left: 3.75%;
+        right: 2.5%;
+        bottom: 1.4%;
+        height: 10.4%;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 0.5%;
+      }
+      .chapter {
+        position: relative;
+        border: 1px solid transparent;
+        background: transparent;
+        border-radius: 6px;
+        cursor: pointer;
+        padding: 0;
+      }
+      .chapter:hover,
+      .chapter:focus-visible {
+        border-color: var(--gold);
+        background: #f8cd0408;
+        outline: none;
+      }
+      .chapter:hover:after,
+      .chapter:focus-visible:after {
+        content: attr(data-tip);
+        position: absolute;
+        bottom: calc(100% + 5px);
+        left: 0;
+        background: #1e2932;
+        color: var(--fg);
+        font-size: 12px;
+        padding: 7px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+      }
+      .sr {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .bar {
+        border-top: 1px solid var(--line);
+        padding-top: 14px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      button,
+      select,
+      .pick {
+        font: inherit;
+        color: var(--fg);
+        border: 1px solid var(--line);
+        background: #141c23;
+        border-radius: 6px;
+        min-height: 38px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      button:hover,
+      select:hover,
+      .pick:hover {
+        border-color: var(--muted);
+      }
+      button:focus-visible,
+      select:focus-visible,
+      input:focus-visible,
+      .pick:focus-within {
+        outline: 2px solid var(--gold);
+        outline-offset: 3px;
+      }
+      button.primary {
+        border-color: var(--gold);
+        color: var(--gold);
+        min-width: 76px;
+      }
+      button:disabled {
+        opacity: 0.4;
+        cursor: default;
+      }
+      input[type="range"] {
+        flex: 1;
+        min-width: 100px;
+        accent-color: var(--gold);
+        cursor: pointer;
+      }
+      output {
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+        font-size: 13px;
+        min-width: 90px;
+      }
+      label {
+        color: var(--muted);
+      }
+      .hint {
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.6;
+      }
+      .error {
+        padding: 14px;
+        background: #281f18;
+        color: #f2c6a2;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+      .error[hidden] {
+        display: none;
+      }
+      .pick {
+        display: inline-block;
+        margin-left: 12px;
+        font-size: 13px;
+      }
+      details {
+        color: var(--muted);
+        font-size: 12px;
+        margin-top: 12px;
+        max-width: 900px;
+        line-height: 1.6;
+      }
+      summary {
+        cursor: pointer;
+      }
+      main:fullscreen {
+        width: 100%;
+        height: 100%;
+        padding: 0 2vw;
+        background: var(--bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .stage:fullscreen {
+        height: 100%;
+        width: 100%;
+      }
+      main:fullscreen .stage {
+        width: min(100%, calc((100vh - 92px) * 1.7777778));
+        max-height: none;
+        flex: none;
+        align-self: center;
+        aspect-ratio: 16/9;
+      }
+      main:fullscreen details,
+      main:fullscreen .hint {
+        display: none;
+      }
+      @media (max-width: 700px) {
+        main {
+          padding: 5px 8px 16px;
+        }
+        .bar {
+          gap: 7px;
+        }
+        button,
+        select {
+          font-size: 12px;
+          padding: 6px 8px;
+          min-height: 34px;
+        }
+        .hint {
+          font-size: 12px;
+        }
+        input[type="range"] {
+          order: 8;
+          width: 75%;
+          flex-basis: 65%;
+        }
+        output {
+          order: 9;
+        }
+        .chapter:hover:after {
+          display: none;
+        }
+      }
+
+      body {
+        display: block;
+      }
+      main {
+        margin: auto;
+        max-width: 1600px;
+        padding: 10px 12px 16px;
+      }
+      .hint {
+        line-height: 1.5;
+      }
+      .bar button,
+      .bar select {
+        border-radius: 4px;
+      }
+      details {
+        max-width: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="app">
+      <div class="stage" id="stage">
+        <video
+          id="video"
+          data-src="GPWRM_Method_45s_v4.mp4"
+          preload="auto"
+          muted
+          playsinline
+          aria-label="Interactive GP-WRM method animation"
+        ></video>
+        <nav class="chapters" id="chapters" aria-label="Animation stages"></nav>
+      </div>
+      <div class="bar">
+        <button class="primary" id="play" disabled>Play</button>
+        <button id="restart" disabled aria-label="Restart from the beginning">Restart</button>
+        <input type="range" id="scrub" min="0" max="1000" value="0" aria-label="Video timeline" disabled />
+        <output id="time">00:00 / 00:45</output>
+
+        <button id="fullscreen">Fullscreen</button>
+      </div>
+      <p class="hint" id="status" aria-live="polite">Loading the interactive video…</p>
+      <div id="error" class="error" hidden>
+        The video could not be loaded. Reload the page, or choose the accompanying 45-second MP4.<label class="pick"
+          >Choose video<input id="pick" type="file" accept="video/mp4" class="sr"
+        /></label>
+      </div>
+    </main>
+    <script>
+      "use strict";
+      const chapters = [
+        { name: "Observe", zh: "Observe", start: 0, end: 4, still: 2 },
+        { name: "Downsample", zh: "Downsample", start: 4, end: 7.5, still: 6.1 },
+        { name: "Register", zh: "Register", start: 7.5, end: 12.5, still: 10.36 },
+        { name: "Displacement field", zh: "Displacement field", start: 12.5, end: 16, still: 15.3 },
+        { name: "Grasp motion", zh: "Grasp motion", start: 16, end: 25, still: 19.75 },
+        { name: "Shape servo", zh: "Shape servo", start: 25, end: 42, still: 27.41 },
+        { name: "Target reached", zh: "Target reached", start: 42, end: 45, still: 44.95 },
+      ];
+      const $ = (id) => document.getElementById(id),
+        v = $("video");
+      let selected = 0,
+        stopAt = null,
+        localURL = null;
+      const duration = () => 45;
+      const displayTime = (t) => t;
+      const actualTime = (t) => t;
+      const format = (t) =>
+        `${Math.floor(t / 60)
+          .toString()
+          .padStart(2, "0")}:${Math.floor(t % 60)
+          .toString()
+          .padStart(2, "0")}`;
+      function phase(t) {
+        return chapters.findIndex((c) => t >= c.start && t < c.end);
+      }
+      function speed() {
+        v.playbackRate = 1;
+      }
+      // Start once when the video is visible and ready; never override a user's pause or stage selection.
+      let autoStarted = false;
+      let videoVisible = false;
+      v.muted = true;
+      function maybeAutoplay() {
+        if (autoStarted || !videoVisible || v.readyState < 3 || document.hidden) return;
+        autoStarted = true;
+        stopAt = null;
+        speed();
+        v.play().catch(() => {
+          $("status").textContent = "Select Play to start the video.";
+        });
+      }
+      const visibilityObserver = new IntersectionObserver(
+        (entries) => {
+          videoVisible = entries.some((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.25);
+          maybeAutoplay();
+        },
+        { threshold: [0, 0.25] }
+      );
+      visibilityObserver.observe(v);
+      v.addEventListener("canplay", maybeAutoplay);
+      document.addEventListener("visibilitychange", maybeAutoplay);
+      let pendingSeek = null;
+      let seekSerial = 0;
+      function update() {
+        const k = phase(v.currentTime);
+        if (k >= 0 && pendingSeek === null) selected = k;
+        document.querySelectorAll(".chapter").forEach((b, i) => {
+          b.setAttribute("aria-current", i === selected ? "step" : "false");
+        });
+        $("scrub").value = (displayTime(v.currentTime) / duration()) * 1000;
+        $("time").textContent = `${format(displayTime(v.currentTime))} / ${format(duration())}`;
+        $("play").textContent = v.paused ? "Play" : "Pause";
+      }
+      function seekChapter(i) {
+        autoStarted = true;
+        const target = Math.max(0, Math.min(6, i));
+        const serial = ++seekSerial;
+        v.pause();
+        selected = target;
+        pendingSeek = target;
+        stopAt = chapters[target].end;
+        const start = chapters[target].start;
+        const onSeeked = () => {
+          v.removeEventListener("seeked", onSeeked);
+          if (serial !== seekSerial) return;
+          if (Math.abs(v.currentTime - start) > 0.5) {
+            pendingSeek = null;
+            $("status").textContent = "The selected stage could not be loaded. Please reload the demo.";
+            return;
+          }
+          pendingSeek = null;
+          selected = target;
+          speed();
+          v.play().catch(() => {
+            $("status").textContent = "Select Play to resume this stage.";
+          });
+          update();
+        };
+        v.addEventListener("seeked", onSeeked);
+        if (Math.abs(v.currentTime - start) < 0.01 && !v.seeking) onSeeked();
+        else v.currentTime = start;
+        $("status").textContent = `${String(target + 1).padStart(2, "0")} ${chapters[target].name}`;
+        update();
+      }
+      function play() {
+        if (v.currentTime >= duration() - 0.01 && pendingSeek === null) v.currentTime = 0;
+        speed();
+        v.play().catch(() => {
+          $("status").textContent = "Select Play again to start the video.";
+        });
+      }
+      chapters.forEach((c, i) => {
+        const b = document.createElement("button");
+        b.className = "chapter";
+        b.type = "button";
+        b.disabled = true;
+        b.setAttribute("aria-label", `${i + 1}. ${c.name}：${c.zh}`);
+        b.dataset.tip = `${String(i + 1).padStart(2, "0")} ${c.zh}`;
+        const s = document.createElement("span");
+        s.className = "sr";
+        s.textContent = `${i + 1}. ${c.name}`;
+        b.append(s);
+        b.onclick = () => seekChapter(i);
+        $("chapters").append(b);
+      });
+      $("play").onclick = () => {
+        autoStarted = true;
+        stopAt = null;
+        if (v.paused) play();
+        else v.pause();
+      };
+      $("restart").onclick = () => {
+        autoStarted = true;
+        stopAt = null;
+        v.currentTime = 0;
+        play();
+      };
+      $("scrub").addEventListener("input", () => {
+        autoStarted = true;
+        stopAt = null;
+        v.currentTime = actualTime((Number($("scrub").value) / 1000) * duration());
+        update();
+      });
+
+      $("fullscreen").onclick = async () => {
+        try {
+          if (document.fullscreenElement) await document.exitFullscreen();
+          else await $("app").requestFullscreen();
+        } catch {
+          $("status").textContent = "Fullscreen is unavailable in this browser. Open the interactive demo in a new tab.";
+        }
+      };
+      v.addEventListener("loadedmetadata", () => {
+        ["play", "restart", "scrub"].forEach((id) => ($(id).disabled = false));
+        document.querySelectorAll(".chapter").forEach((b) => (b.disabled = false));
+        $("error").hidden = true;
+        if (Math.abs(v.duration - 45) > 0.6) {
+          $("status").textContent = "Use the accompanying 45-second video to ensure accurate chapter navigation.";
+        }
+        $("status").textContent = "Select a numbered stage to play it. Space: play/pause. Arrow keys: previous/next stage.";
+        update();
+      });
+      let directFallback = false;
+      function useDirectVideo() {
+        if (directFallback) {
+          $("error").hidden = false;
+          $("status").textContent = "Video loading failed. Please reload the page.";
+          return;
+        }
+        directFallback = true;
+        $("error").hidden = true;
+        $("status").textContent = "Loading the video…";
+        v.src = new URL(v.dataset.src, document.baseURI).href;
+        v.load();
+      }
+      v.addEventListener("error", useDirectVideo);
+      $("pick").onchange = (e) => {
+        const f = e.target.files[0];
+        if (!f) return;
+        if (localURL) URL.revokeObjectURL(localURL);
+        localURL = URL.createObjectURL(f);
+        v.src = localURL;
+        v.load();
+      };
+      ["timeupdate", "seeked", "pause", "play", "ended"].forEach((e) => v.addEventListener(e, update));
+      function tick() {
+        if (!v.paused && pendingSeek === null) {
+          speed();
+          if (stopAt !== null && v.currentTime >= stopAt - 0.025) {
+            const end = stopAt;
+            stopAt = null;
+            v.pause();
+            v.currentTime = end - 0.04;
+            $("status").textContent = "Stage complete. Select another stage or resume playback.";
+          }
+          update();
+        }
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      document.addEventListener("keydown", (e) => {
+        if (["INPUT", "SELECT", "BUTTON"].includes(document.activeElement.tagName)) return;
+        if (e.code === "Space") {
+          e.preventDefault();
+          $("play").click();
+        } else if (e.code === "ArrowRight") {
+          e.preventDefault();
+          seekChapter(selected + 1);
+        } else if (e.code === "ArrowLeft") {
+          e.preventDefault();
+          seekChapter(selected - 1);
+        }
+      });
+      // Pure timeline helpers are exposed for deterministic offline checks.
+      window.GPWRM = { chapters, seekChapter };
+
+      // Load one complete binary Blob so seeking does not rely on the host's HTTP Range support.
+      async function loadVideo() {
+        try {
+          const response = await fetch(new URL(v.dataset.src, document.baseURI), { credentials: "same-origin" });
+          if (!response.ok) throw new Error("Video unavailable");
+          const bytes = await response.arrayBuffer();
+          if (bytes.byteLength < 12 || String.fromCharCode(...new Uint8Array(bytes, 4, 4)) !== "ftyp") {
+            throw new Error("Invalid MP4 response");
+          }
+          const blob = new Blob([bytes], { type: "video/mp4" });
+          localURL = URL.createObjectURL(blob);
+          v.src = localURL;
+          v.load();
+        } catch {
+          useDirectVideo();
+        }
+      }
+      loadVideo();
+      function reportHeight() {
+        parent.postMessage({ type: "gpwrm-resize", height: document.getElementById("app").offsetHeight }, location.origin);
+      }
+      new ResizeObserver(reportHeight).observe(document.getElementById("app"));
+      window.addEventListener("load", reportHeight);
+    </script>
+  </body>
+</html>
