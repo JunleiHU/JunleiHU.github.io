@@ -17,3 +17,15 @@
 "dogar":
   - firstname: ["Mehmet", "Mehmet R.", "Mehmet R"]
     url: https://eps.leeds.ac.uk/computing/staff/743/professor-mehmet-dogar
+
+"de momi":
+  - firstname: ["Elena"]
+    url: https://www.deib.polimi.it/eng/people/dettagli/172386
+
+"ali":
+  - firstname: ["Sharib"]
+    url: https://eps.leeds.ac.uk/staff/11465/dr-sharib-ali
+
+"sarikaya":
+  - firstname: ["Duygu"]
+    url: https://eps.leeds.ac.uk/staff/13320/dr-duygu-sarikaya
