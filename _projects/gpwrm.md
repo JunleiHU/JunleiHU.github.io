@@ -37,7 +37,6 @@ The proposed shape representation, built from grid points and a deformation fiel
 <br>
 <h1 style="text-align: center;">Simulations</h1>
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/simu-3-flatten.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
@@ -59,6 +58,7 @@ The proposed shape representation, built from grid points and a deformation fiel
 <h1 style="text-align: center;">Real-World Experiments</h1>
 
 ## Setup
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/gpwrm_figure6.png" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -68,6 +68,7 @@ The proposed shape representation, built from grid points and a deformation fiel
 <br>
 
 ## Validation on Different Materials
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/flatten.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
@@ -94,6 +95,7 @@ The proposed shape representation, built from grid points and a deformation fiel
 <br>
 
 ## Validation on Phantom Colon without Occlusion
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/colon_flatten.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
@@ -118,6 +120,7 @@ The proposed shape representation, built from grid points and a deformation fiel
 </div>
 
 ## Validation on Phantom Colon with Occlusion
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/phantom_occluded_radius0.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
@@ -142,6 +145,7 @@ The proposed shape representation, built from grid points and a deformation fiel
 </div>
 
 ## Validation on Cadaveric Colon with Occlusion
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/cad_plane.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
@@ -166,6 +170,7 @@ The proposed shape representation, built from grid points and a deformation fiel
 </div>
 
 ## Validation on Cadaveric Colon with Occlusion
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/cad_occluded.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 *"[Autonomous Robotic Exploration on Unknown Soft Object]({{ site.baseurl }}{% link _projects/exploration.md %})"*  has been **accepted by the International Journal of Robotics Research (IJRR)**!
+🎉 _"[Autonomous Robotic Exploration on Unknown Soft Object]({{ site.baseurl }}{% link _projects/exploration.md %})"_ has been **accepted by the International Journal of Robotics Research (IJRR)**!

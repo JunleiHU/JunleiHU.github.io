@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 *"[Multiscale Deformable Objects Manipulation via Wavelet-Decomposed Boundary Element Method]({{ site.baseurl }}{% link _projects/dwtbem.md %})"*  has been **accepted by the International Journal of Robotics Research (IJRR)**!
+🎉 _"[Multiscale Deformable Objects Manipulation via Wavelet-Decomposed Boundary Element Method]({{ site.baseurl }}{% link _projects/dwtbem.md %})"_ has been **accepted by the International Journal of Robotics Research (IJRR)**!
