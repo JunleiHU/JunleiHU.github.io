@@ -1,12 +1,10 @@
 ---
 layout: page
-title: Autonomous robotic exploration of unknown soft objects
+title: Autonomous Robotic Exploration on Unknown Soft Object 
 # description: with background image
 img: assets/img/12.jpg
 # related_publications: true
 ---
-
-<div style="border-left:3px solid var(--global-theme-color);padding:.8rem 1rem;margin:1.5rem 0 2rem"><strong>Featured on the cover of IJRR</strong><br><a href="https://journals.sagepub.com/toc/ijr/45/12">Volume 45, Issue 12 · October 2026</a> · pp. 1968–1998<br><a href="https://doi.org/10.1177/02783649251415415">Read the published article</a></div>
 
 <h1 style="text-align: center;">Abstract</h1>
 <div style="width: 75%; margin: 0 auto; text-align: justify;">
@@ -53,3 +51,4 @@ Robotic exploration of unknown soft objects presents significant challenges for 
 <div class="caption">
     Robotic exploration on a beanie.
 </div>
+
